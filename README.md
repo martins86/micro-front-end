@@ -3,6 +3,7 @@
 > Micro Front-end orientado a url's com nginx. 
 
 - Angular - [ReadMe app angular](./mf-angular/README.md).<br>
+- React - [ReadMe app react](./mf-react/README.md).<br>
 
 <br>
 <br>
@@ -13,7 +14,9 @@
 <br>
 
 ```sh
-npm install -g @angular/cli 
+npm install -g @angular/cli
+
+npm install -g create-react-app
 ```
 
 ### Comandos
@@ -22,6 +25,8 @@ npm install -g @angular/cli
 
 ```sh
 ng new app-angular --directory ./mf-angular --routing=false --strict=true --style=scss
+
+create-react-app mf-react
 ```
 
 
