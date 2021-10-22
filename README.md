@@ -4,6 +4,7 @@
 
 - Angular - [ReadMe app angular](./mf-angular/README.md).<br>
 - React - [ReadMe app react](./mf-react/README.md).<br>
+- Vue - [ReadMe app vue](./mf-vue/README.md).<br>
 
 <br>
 <br>
@@ -17,6 +18,9 @@
 npm install -g @angular/cli
 
 npm install -g create-react-app
+
+npm install -g vue
+npm install -g @vue/cli
 ```
 
 ### Comandos
@@ -27,6 +31,8 @@ npm install -g create-react-app
 ng new app-angular --directory ./mf-angular --routing=false --strict=true --style=scss
 
 create-react-app mf-react
+
+vue create mf-vue
 ```
 
 
