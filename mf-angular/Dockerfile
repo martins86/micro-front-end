@@ -12,7 +12,7 @@ COPY . .
 
 ## instalando dependências no container e rodndo build.
 RUN npm ci --silent
-RUN npm run build -- --deployUrl /mf-angular/
+RUN npm run build -- --deploy-url /mf-angular/
 
 
 ## Iniciando o Nginx
@@ -22,4 +22,4 @@ FROM nginx
 COPY ./nginx.conf /etc/nginx/nginx.conf
 
 ## copiando o build gerado para a pasta do nginx
-COPY --from=buildApp /app/dist/mf-angular /usr/share/nginx/html
+COPY --from=buildApp /app/dist/app-angular /usr/share/nginx/html
