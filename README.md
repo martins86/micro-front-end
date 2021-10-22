@@ -13,7 +13,7 @@
 <br>
 
 ```sh
-npm install @angular/cli 
+npm install -g @angular/cli 
 ```
 
 ### Comandos
@@ -21,7 +21,7 @@ npm install @angular/cli
 <br>
 
 ```sh
-ng new app-angular --directory ./mf-angular --routing=true --strict=true --style=scss
+ng new app-angular --directory ./mf-angular --routing=false --strict=true --style=scss
 ```
 
 
