@@ -12,7 +12,7 @@ COPY . .
 
 ## instalando dependências no container e rodndo build.
 RUN npm ci --silent
-RUN npm run build
+RUN npm run build -- --deployUrl /mf-angular/
 
 
 ## Iniciando o Nginx
