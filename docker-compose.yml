@@ -1,0 +1,26 @@
+version: "3.7"
+services:
+  mf-angular:
+    container_name: mf-angular
+    build:
+      context: ./mf-angular
+
+  mf-react:
+    container_name: mf-react
+    build:
+      context: ./mf-react
+
+  mf-vue:
+    container_name: mf-vue
+    build:
+      context: ./mf-vue
+
+  orchestrator:
+    container_name: orchestrator
+    ports: 80:80
+    depends_on:
+      - mf-angular
+      - mf-react
+      - mf-vue
+    build:
+      context: .
