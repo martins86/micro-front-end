@@ -2,7 +2,6 @@
 
 > Angular com web elements (angular elements).
 
-
 <br>
 <br>
 
@@ -12,6 +11,7 @@
 
 ```sh
 npm install -g @angular/cli
+npm install -g live-server
 ```
 
 <br>
@@ -30,17 +30,25 @@ ng g c features/layout/main-content/
 ng add @angular/elements
 ng serve --port 4200
 
-ng g app app1 --routing=false --strict=true --style=scss
+ng g app app1 --routing=true --strict=true --style=scss
 ng g m hello-app1 --project app1
 ng g c hello-app1 --project app1
 ng serve --project app1 --port 4201
 
-ng g app app2 --routing=false --strict=true --style=scss
+ng g app app2 --routing=true --strict=true --style=scss
 ng g m hello-app2 --project app2
 ng g c hello-app2 --project app2
 ng serve --project app2 --port 4202
 
 ng add ngx-build-plus
+ng add ngx-build-plus --project app1
+ng add ngx-build-plus --project app2
+```
+
+<br>
+
+```sh
+npx live-server ./dist
 ```
 
 <br>

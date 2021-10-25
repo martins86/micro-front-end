@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hello-app1.component.scss']
 })
 export class HelloApp1Component implements OnInit {
+  title = 'hello-app1';
 
   constructor() { }
 

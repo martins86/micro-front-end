@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainContentComponent } from './features/layout/main-content/main-content.component';
+import { HelloApp1Component } from './hello-app1/hello-app1.component';
 
 const routes: Routes = [
-  { path: '', component: MainContentComponent }
+  { path: '/app1', component: HelloApp1Component },
+  {
+    path: '**',
+    redirectTo: '/app1',
+    pathMatch: 'full',
+  }
 ];
 
 @NgModule({
