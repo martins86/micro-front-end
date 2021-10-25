@@ -21,23 +21,26 @@ npm install -g @angular/cli
 <br>
 
 ```sh
-ng new portal --routing=tue --strict=true --style=scss
-ng g m shared/components/layout/top-bar/top-bar
-ng g c shared/components/layout/top-bar
-ng g m shared/components/layout/main-content/main-content
-ng g c shared/components/layout/main-content
+ng new portal --routing=true --strict=true --style=scss
+cd portal
+ng g m features/layout/top-bar/
+ng g c features/layout/top-bar/
+ng g m features/layout/main-content/
+ng g c features/layout/main-content/
 ng add @angular/elements
-ng add ngx-build-plus
+ng serve --port 4200
 
 ng g app app1 --routing=false --strict=true --style=scss
-ng add @angular/elements ngx-build-plus --project app1
+ng g m hello-app1 --project app1
 ng g c hello-app1 --project app1
-ng server --project app1 --port 4201
+ng serve --project app1 --port 4201
 
 ng g app app2 --routing=false --strict=true --style=scss
-ng add @angular/elements ngx-build-plus --project app2
+ng g m hello-app2 --project app2
 ng g c hello-app2 --project app2
-ng server --project app2 --port 4202
+ng serve --project app2 --port 4202
+
+ng add ngx-build-plus
 ```
 
 <br>
