@@ -7,9 +7,9 @@
     "start:app1": "ng serve --host 0.0.0.0 --disable-host-check --project app1 --port 4201 --open",
     "start:app2": "ng serve --host 0.0.0.0 --disable-host-check --project app2 --port 4202 --open",
     "build:all": "npm run build:portal && npm run build:app1 && npm run build:app2",
-    "build:portal": "ng build --single-bundle --vendor-chunk=false --aot",
-    "build:app1": "ng build --project app1 --single-bundle --vendor-chunk=false --aot",
-    "build:app2": "ng build --project app2 --single-bundle --vendor-chunk=false --aot",
+    "build:portal": "ng build  --single-bundle true --output-hashing none --vendor-chunk=false --aot",
+    "build:app1": "ng build --project app1  --single-bundle true --output-hashing none --vendor-chunk=false --aot",
+    "build:app2": "ng build --project app2  --single-bundle true --output-hashing none --vendor-chunk=false --aot",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
