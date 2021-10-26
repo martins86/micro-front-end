@@ -11,8 +11,8 @@ export class TopBarComponent {
 
   constructor() {
     this.navs = [
-      { ariaLabel: 'App1 in Project', url: 'app1', title: 'Micro App1', text: 'App1' },
-      { ariaLabel: 'App2 in Project', url: 'app2', title: 'Micro App2', text: 'App2' }
+      { ariaLabel: 'App1 in Project', url: '#/app1', title: 'Micro App1', text: 'App1' },
+      { ariaLabel: 'App2 in Project', url: '#/app2', title: 'Micro App2', text: 'App2' }
     ];
   }
 }

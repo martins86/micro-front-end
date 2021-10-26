@@ -1,6 +1,15 @@
 .card-container {
   display: flex;
+  min-height: 50px;
+  width: 600px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 24px;
+  background-color: #eeeeee;
+  border: 1px solid #b1b1b1;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px 0px #3484d3a1;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
