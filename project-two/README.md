@@ -12,6 +12,7 @@
 ```sh
 npm install -g @angular/cli
 npm install -g live-server
+npm install
 ```
 
 <br>
