@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hello-app2.component.scss']
 })
 export class HelloApp2Component implements OnInit {
-  title = 'app2';
+  title = 'hello-app2';
   constructor() { }
 
   ngOnInit(): void {
