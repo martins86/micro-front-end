@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal - Index Component e StencilJS</title>
+    <style>
+      .text-html-index {
+        font-size: 1.2rem;
+        color: brown;
+      }
+    </style>
+
+    <script src="index.js"></script>
+    <script
+      type="module"
+      src="./dist/stencil-test/stencil-test.esm.js"
+    ></script>
+    <script nomodule src="./dist/stencil-test/index.esm.js"></script>
+  </head>
+  <body>
+    <component-index>
+      <p class="text-html-index">Text in Portal HTML 1</p>
+      <span>Text in Portal HTML 2</span>
+    </component-index>
+    <hr />
+    <component-two>
+      <span>Text in Portal HTML be Component Two 1</span>
+    </component-two>
+  </body>
+</html>
