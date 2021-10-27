@@ -6,13 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-content.component.scss']
 })
 export class MainContentComponent implements OnInit {
+
+  private urlCDN: string = 'https://8080-orange-giraffe-e98luyei.ws-us18.gitpod.io';
+
   ngOnInit(): void {
     const scriptApp1 = document.createElement('script');
-    scriptApp1.src = 'https://8080-white-dragon-d2td2j19.ws-us17.gitpod.io/app1/main.js';
+    scriptApp1.src = `${this.urlCDN}/app1/main.js`;
     document.body.appendChild(scriptApp1);
 
     const scriptApp2 = document.createElement('script');
-    scriptApp2.src = 'https://8080-white-dragon-d2td2j19.ws-us17.gitpod.io/app2/main.js';
+    scriptApp2.src = `${this.urlCDN}/app2/main.js`;
     document.body.appendChild(scriptApp2);
   }
 }
