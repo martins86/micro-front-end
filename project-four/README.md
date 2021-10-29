@@ -47,6 +47,8 @@ ng serve --project portal --port 5000 --host 0.0.0.0 --disable-host-check --open
 ```sh
 ng g app mfe1 --routing=true --strict=true --style=scss
 ng add @angular-architects/module-federation --project mfe1 --port 3001
+
+ng serve --project --project mfe1 --port 3001 --host 0.0.0.0 --disable-host-check --open
 ```
 
 <br>
