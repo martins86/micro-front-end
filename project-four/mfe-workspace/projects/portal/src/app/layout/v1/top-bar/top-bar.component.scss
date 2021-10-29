@@ -23,3 +23,12 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+nav ul li {
+  display: inline;
+  padding: 1px 20px;
+}
+
+nav ul li:not(:first-child) {
+  border-left: 2px solid white;
+}
