@@ -26,8 +26,8 @@ module.exports = {
       name: "mfe1",
       filename: "remoteEntry.js",
       exposes: {
-        "./HelloWordModule":
-          "./projects/mfe1/src/app/pages/hello-word/hello-word.module.ts",
+        "./HelloWorldModule":
+          "./projects/mfe1/src/app/pages/hello-world/hello-world.module.ts",
       },
       shared: share({
         "@angular/core": {

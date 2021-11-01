@@ -24,7 +24,7 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       remotes: {
-        mfe1: `mfe1@https://3001-fuchsia-donkey-osghhfwq.ws-us18.gitpod.io/remoteEntry.js`,
+        mfe1: `mfe1@https://8080-purple-dodo-6fj4w5tq.ws-us18.gitpod.io/mfe1/remoteEntry.js`,
       },
       shared: share({
         "@angular/core": {

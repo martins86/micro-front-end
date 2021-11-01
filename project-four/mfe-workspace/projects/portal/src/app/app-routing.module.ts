@@ -13,23 +13,15 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'hello-word',
+    path: 'hello-world',
     loadChildren: () => loadRemoteModule({
-      remoteEntry: 'https://3001-fuchsia-donkey-osghhfwq.ws-us18.gitpod.io/remoteEntry.js',
+      remoteEntry: `${environment.mfeUrlDomainOne}remoteEntry.js`,
       remoteName: 'mfe1',
-      exposedModule: './HelloWordModule'
+      exposedModule: './HelloWorldModule'
     })
-      .then(m => { return m.HelloWordModule })
+      .then(m => { return m.HelloWorldModule })
       .catch(err => console.log('Error: Load Children ', err))
   },
-  // {
-  //   path: 'hello-word',
-  //   loadChildren: () =>
-  //     import('mfe1/HelloWordModule')
-  //       .then((m) => {
-  //         return m.HelloWordModule;
-  //       }),
-  // },
   {
     path: 'not-found',
     component: NotfoundComponent

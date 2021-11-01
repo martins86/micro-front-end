@@ -1,1 +1,1 @@
-declare module 'mfe1/HelloWordModule';
+declare module 'mfe1/HelloWorldModule';

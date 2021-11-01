@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HelloWordModule } from './pages/hello-word/hello-word.module';
+import { HelloWorldModule } from './pages/hello-world/hello-world.module';
 import { HomeModule } from './pages/home/home.module';
 
 @NgModule({
@@ -16,7 +16,7 @@ import { HomeModule } from './pages/home/home.module';
     HttpClientModule,
     AppRoutingModule,
     HomeModule,
-    HelloWordModule
+    HelloWorldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
