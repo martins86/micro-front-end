@@ -21,6 +21,13 @@
 
   <br>
 
+> Projeto 4 - Micro Front-end com Angular emodule federation, orientado a apps/projetos (portal, mfe1).<br />
+> Opinião: Melhor opção usando apps com angular.
+
+- Projeto 4 - [ReadMe](./project-four/README.md).
+
+  <br>
+
 ## Licença
 
 Este projeto é [MIT licensed](./LICENSE).

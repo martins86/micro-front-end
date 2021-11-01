@@ -49,7 +49,7 @@ ng serve --project portal --port 5000 --host 0.0.0.0 --disable-host-check --open
 ng g app mfe1 --routing=true --strict=true --style=scss
 ng add @angular-architects/module-federation --project mfe1 --port 3001
 
-ng serve --project --project mfe1 --port 3001 --host 0.0.0.0 --disable-host-check --open
+ng serve --project mfe1 --port 3001 --host 0.0.0.0 --disable-host-check --open
 ng build --project mfe1 --base-href ./ --single-bundle=true --output-hashing=none --vendor-chunk=false --aot
 ```
 
